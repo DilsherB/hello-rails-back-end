@@ -1,0 +1,30 @@
+rails new . --api --database=postgresql
+install linters from microverse linter github page
+update database.yml to have following in 'development' & 'test'
+  username: dilsh
+  password: dilsher
+  host: localhost
+  port: 5432
+rails db:create
+rails g model Message content:string
+  it will create
+    message.rb (model)
+    xxxxxxxxxxxxxx.create_messages.rb (migration)
+    message.yml (fixture for tests)
+    message_test.rb (infrastructure to write tests)
+rails db:migrate
+rails c (opens console)
+  Message.create([
+    {content:'hello world'},
+    {content:'welcome to my site'},
+    {content:'Nice to see you!'},
+    {content:'How can we help you today?'},
+    {content:'Have a great day!'},
+  ]) (will create 5 messages)
+rails g controller Greetings random
+  it will create
+    greetings_controller.rb (controller)
+    route
+    greetings_controller_test.rb (infrastructure to write tests)
+update the greetings_controller as per requirement
+update route.rb
