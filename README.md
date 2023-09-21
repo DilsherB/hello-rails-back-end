@@ -27,7 +27,7 @@
   <!-- PROJECT DESCRIPTION -->
   # 📖 Blog_App_Rails<a name="about-project"></a>
 
-The Hello Rails Backend App is a web application just to get comfortable with rails and react as one application.
+The Hello Rails Backend App is a web application just to get comfortable with rails and react as one application. Here is <a href=https://github.com/DilsherB/hello-react-front-end/pull/1>front end</a> for this app
 
 ##🛠 Built With <a name="built-with"></a>
 
