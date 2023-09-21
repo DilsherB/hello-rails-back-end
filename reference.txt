@@ -28,3 +28,15 @@ rails g controller Greetings random
     greetings_controller_test.rb (infrastructure to write tests)
 update the greetings_controller as per requirement
 update route.rb
+update config/cors to allow to be accessed by react (front end of your project)
+  I commented out following lines for this
+    Rails.application.config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins "*"
+
+        resource "*",
+          headers: :any,
+          methods: [:get, :post, :put, :patch, :delete, :options, :head]
+      end
+    end
+run 'bundle add rack-cors' to install cors also
